@@ -2,11 +2,11 @@ import Link from "next/link";
 
 const SideBar = () => {
   return (
-    <div className="border rounded md:min-w-60">
+    <div className="border rounded md:min-w-60 h-fit">
       <h2 className="text-lg font-semibold py-[14px] px-5 bg-gray-100">
         TOP CATEGORIES
       </h2>
-      <div className="px-4 mb-4">
+      <div className="px-4 mb-4 mt-2">
         <ul className="sidebar">
           <li>
             <Link href={"/"}>Fashion</Link>
@@ -25,6 +25,9 @@ const SideBar = () => {
           </li>
           <li>
             <Link href={"/"}>Sports</Link>
+          </li>
+          <li>
+            <Link href={"/"}>Toy & Games</Link>
           </li>
         </ul>
         <Link href={"/"} className="bg-black px-6 py-3 text-white inline-block mt-4">

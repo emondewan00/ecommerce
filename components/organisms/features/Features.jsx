@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Features = () => {
   return (
-    <div className="border grid grid-cols-3 py-4 shadow">
+    <div className="border grid grid-cols-3 py-4 mt-6 shadow">
       <div className="flex gap-x-4 px-6 border-r">
         <Image src={"/images/delivery.png"} width={40} height={40} alt="" />
         <div>

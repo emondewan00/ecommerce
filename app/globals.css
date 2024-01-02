@@ -6,11 +6,16 @@
   @apply p-4 inline-block;
 }
 .sidebar li a {
-  @apply py-2 inline-block border-b w-full;
+  @apply py-[9px] inline-block border-b w-full;
 }
 .sidebar li:last-child a {
   @apply border-b-0;
 }
-.swiper-slide {
-  height: auto !important;
-}
+
+/* .threeD {
+  perspective: 100px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+} */
+
+
