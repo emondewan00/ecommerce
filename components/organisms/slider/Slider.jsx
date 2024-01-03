@@ -6,7 +6,7 @@ import Image from "next/image";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import LinkButton from "@/components/atoms/LinkButton/LinkButton";
+import LinkButton from "@/components/atoms/Button/LinkButton";
 
 export default function App() {
   return (

@@ -10,7 +10,7 @@ import {
 
 const MidNav = () => {
   return (
-    <div className="py-6 flex items-center">
+    <div className="py-6 flex items-center px-4 md:px-0">
       <Image
         src={"/images/logo-white.png"}
         width={100}
@@ -18,7 +18,7 @@ const MidNav = () => {
         alt="logo"
       />
       <div className="flex items-center justify-between gap-x-12 ml-auto">
-        <div className="relative">
+        <div className="relative hidden md:block">
           <input
             type="text"
             name="search"
@@ -30,7 +30,7 @@ const MidNav = () => {
             <FaSearch className="text-gray-300" />
           </span>
         </div>
-        <div className="flex items-center">
+        <div className="md:flex items-center hidden">
           <FaPhoneAlt className="text-2xl text-gray-100 mr-2" />
           <div className="flex flex-col">
             <span className="text-sm text-gray-50 font-medium">

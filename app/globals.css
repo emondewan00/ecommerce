@@ -6,10 +6,23 @@
   @apply p-4 inline-block;
 }
 .sidebar li a {
-  @apply py-[9px] inline-block border-b w-full;
+  @apply py-2 inline-block border-b w-full;
 }
 .sidebar li:last-child a {
   @apply border-b-0;
+}
+
+
+@layer components {
+  .bg-cs {
+    @apply bg-no-repeat bg-cover;
+  }
+  .feature div:last-child {
+    @apply border-b-0 border-r-0 ;
+  }
+  .features li {
+    /* @apply  */
+  }
 }
 
 /* .threeD {
@@ -17,5 +30,3 @@
   backface-visibility: hidden;
   transform-style: preserve-3d;
 } */
-
-
