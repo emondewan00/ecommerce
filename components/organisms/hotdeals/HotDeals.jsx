@@ -15,15 +15,22 @@ import Rating from "react-rating";
 
 const HotDeals = () => {
   return (
-    <div className="rounded border p-4 min-w-[75%]">
+    <div className="rounded border p-4 md:min-w-[75%]">
       <h3 className="text-xl py-2 border-b">Deals Hot of The Day</h3>
-      <div className="  mt-5 flex gap-x-6">
+      <div className="  mt-5 flex flex-col md:flex-row gap-6 ">
         <div className="relative">
           <Image
             src={"/images/1-1-600x675.jpg"}
-            className="min-w-[350px] h-[350px] object-cover relative"
+            className="hidden md:block object-cover relative"
             width={600}
             height={600}
+            alt=""
+          />
+          <Image
+            src={"/images/1-1-600x675.jpg"}
+            className="block h-64 w-72 md:hidden object-cover relative mx-auto"
+            width={120}
+            height={100}
             alt=""
           />
           <span className="absolute top-4 left-4 bg-orange-400 text-white text-[12px] px-2 rounded-[2px] py-[1px]">

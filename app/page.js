@@ -19,10 +19,10 @@ export default function Home() {
       </div>
       <Features />
       <Sponsors />
-      {/* <div className="flex gap-x-4">
+      <div className="flex flex-col md:flex-row gap-4">
         <HotDeals />
         <TopSell />
-      </div> */}
+      </div>
       <TopCategories />
       <PopularDepartments />
       <Sponsors />

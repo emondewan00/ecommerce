@@ -12,16 +12,27 @@
   @apply border-b-0;
 }
 
-
 @layer components {
   .bg-cs {
     @apply bg-no-repeat bg-cover;
   }
   .feature div:last-child {
-    @apply border-b-0 border-r-0 ;
+    @apply border-b-0 border-r-0;
   }
   .features li {
     /* @apply  */
+  }
+  .table-grid {
+    grid-template-columns: 0.7fr 0.3fr;
+  }
+  tbody tr:nth-child(even) {
+    border: 1px solid rgb(229 231 235);
+    border-top: 0px;
+    border-bottom: 0px;
+  }
+
+  tbody tr:last-child {
+    border-bottom: 1px solid rgb(229 231 235);
   }
 }
 

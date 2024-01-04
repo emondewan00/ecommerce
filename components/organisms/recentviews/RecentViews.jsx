@@ -1,4 +1,4 @@
-import RecentViewCard from "@/components/molecules/cart/RecentViewCard";
+import RecentViewCard from "@/components/molecules/card/RecentViewCard";
 
 const RecentViews = () => {
   return (

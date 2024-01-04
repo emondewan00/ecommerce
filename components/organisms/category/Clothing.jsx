@@ -1,4 +1,4 @@
-import PDCard from "@/components/molecules/cart/PDCard";
+import PDCard from "@/components/molecules/card/PDCard";
 import BannerVertical from "../banner/BannerVertical";
 import SectionHeaderOne from "@/components/molecules/header/SectionHeaderOne";
 

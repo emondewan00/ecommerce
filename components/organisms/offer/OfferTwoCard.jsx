@@ -1,4 +1,4 @@
-import OfferCardVertical from "@/components/molecules/cart/OfferCardVertical";
+import OfferCardVertical from "@/components/molecules/card/OfferCardVertical";
 
 const Sponsors = () => {
   return (

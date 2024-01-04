@@ -1,4 +1,4 @@
-import CategoryCard from "@/components/molecules/cart/CategoryCard";
+import CategoryCard from "@/components/molecules/card/CategoryCard";
 import Image from "next/image";
 
 const TopCategories = () => {

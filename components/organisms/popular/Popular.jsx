@@ -1,5 +1,5 @@
 import ButtonOutline from "@/components/atoms/Button/ButtonOutline";
-import PDCard from "@/components/molecules/cart/PDCard";
+import PDCard from "@/components/molecules/card/PDCard";
 
 const PopularDepartments = () => {
   return (

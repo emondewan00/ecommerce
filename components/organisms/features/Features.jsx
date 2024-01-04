@@ -1,4 +1,4 @@
-import FeatureCard from "@/components/molecules/cart/FeatureCard";
+import FeatureCard from "@/components/molecules/card/FeatureCard";
 import Image from "next/image";
 
 const Features = () => {

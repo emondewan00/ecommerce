@@ -1,4 +1,4 @@
-import PDCardHorizontal from "@/components/molecules/cart/PDCardHorizontal";
+import PDCardHorizontal from "@/components/molecules/card/PDCardHorizontal";
 
 const TopSell = () => {
   return (

@@ -8,7 +8,7 @@ const PDCard = () => {
       <div className="relative">
         <Image
           src={"/images/3-1-1.jpg"}
-          className="w-[200px] h-[200px] object-cover relative"
+          className="w-[200px] h-[180px] object-cover relative"
           width={200}
           height={200}
           alt=""

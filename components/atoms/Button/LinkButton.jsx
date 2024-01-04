@@ -4,7 +4,7 @@ const LinkButton = ({ url, text }) => {
   return (
     <Link
       href={url}
-      className="bg-gray-950 px-6 py-3 text-white inline-block mt-4 rounded"
+      className="bg-gray-950 px-6 py-3 text-white inline-block uppercase rounded"
     >
       {text}
     </Link>
