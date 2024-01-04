@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const BottomNav = () => {
   return (
-    <div className="border-y border-gray-50/50 flex justify-between">
+    <div className="border-y border-gray-50/50  justify-between hidden md:flex">
       <ul className="flex menu-item">
         <li>
           <Link href={"/"}>HOME</Link>

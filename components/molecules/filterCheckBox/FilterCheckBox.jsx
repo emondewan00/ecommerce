@@ -1,9 +1,13 @@
 const FilterCheckBox = ({ id, name }) => {
   return (
-    <div className="flex gap-x-4 mt-2">
-      <input type="checkbox" id="inStock" />
-      <label htmlFor="inStock">In Stock</label>
-    </div>
+    <label
+      htmlFor={id}
+      className="flex gap-x-4 mt-2 hover:bg-gray-200/80 transition-all duration-100 delay-50 px-1 cursor-pointer"
+    >
+      <input type="checkbox" id={id} />
+      <p>{name}</p>
+      {/* <label htmlFor={id}>{name}</label> */}
+    </label>
   );
 };
 

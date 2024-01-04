@@ -11,12 +11,15 @@ import {
 const MidNav = () => {
   return (
     <div className="py-6 flex items-center px-4 md:px-0">
-      <Image
-        src={"/images/logo-white.png"}
-        width={100}
-        height={100}
-        alt="logo"
-      />
+      <div>
+        
+        <Image
+          src={"/images/logo-white.png"}
+          width={100}
+          height={100}
+          alt="logo"
+        />
+      </div>
       <div className="flex items-center justify-between gap-x-12 ml-auto">
         <div className="relative hidden md:block">
           <input

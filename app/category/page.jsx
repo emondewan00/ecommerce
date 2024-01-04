@@ -1,5 +1,7 @@
 import PDCard from "@/components/molecules/card/PDCard";
 import Availability from "@/components/molecules/filters/Availability";
+import Brand from "@/components/molecules/filters/Brand";
+import Color from "@/components/molecules/filters/Color";
 import RangeFilter from "@/components/molecules/filters/RangeFilter";
 import TopBar from "@/components/molecules/filters/TopBar";
 
@@ -11,6 +13,8 @@ const Category = () => {
           {/* filters */}
           <RangeFilter />
           <Availability />
+          <Brand />
+          <Color />
         </div>
         <div className="full">
           <TopBar />

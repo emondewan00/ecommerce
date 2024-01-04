@@ -1,3 +1,6 @@
+// FaTh
+// FaThList icon class
+
 const TopBar = () => {
   return (
     <div className="shadow mb-3 rounded-[1px] flex justify-between px-4 py-2">
@@ -19,7 +22,9 @@ const TopBar = () => {
           </select>
         </div>
         <div>
-          <label htmlFor="sortBy" className="text-gray-700">Sort By:</label>
+          <label htmlFor="sortBy" className="text-gray-700">
+            Sort By:
+          </label>
           <select
             id="sortBy"
             className="bg-gray-100 p-1 rounded text-gray-700 ml-1 outline-none w-28 "
