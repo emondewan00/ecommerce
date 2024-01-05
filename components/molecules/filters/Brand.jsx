@@ -1,5 +1,5 @@
 "use client";
-import FilterHead from "@/components/atoms/Button/filterHead/FilterHead";
+import FilterHead from "@/components/atoms/filterHead/FilterHead";
 import FilterCheckBox from "../filterCheckBox/FilterCheckBox";
 import { useState } from "react";
 
@@ -13,13 +13,13 @@ const Brand = () => {
         accordionState={accordion}
       />
       <div
-        className={`accordion-box mt-4 px-4 pb-3 transition-all duration-300 delay-75 ease-linear ${
-          accordion ? "hidden max-h-0 overflow-hidden" : "h-auto block"
+        className={`accordion-box mt-4 px-4 pb-3 transition-all duration-1000 delay-1000 ease-linear ${
+          accordion ? "hidden h-0 overflow-hidden" : "h-auto "
         }`}
       >
-        <FilterCheckBox name={"Nike"} id={"nike"} />
-        <FilterCheckBox name={"Adidas"} id={"adidas"} />
-        <FilterCheckBox name={"Gucci"} id={"Gucci"} />
+        <FilterCheckBox label={"Nike"} name={"nike"} />
+        <FilterCheckBox label={"Adidas"} name={"adidas"} />
+        <FilterCheckBox label={"Gucci"} name={"Gucci"} />
       </div>
     </div>
   );

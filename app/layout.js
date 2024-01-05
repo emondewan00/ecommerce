@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           <div className="max-w-5xl mx-auto ">
             <TopNav />
             <MidNav />
-            <BottomNav />
+            {/* <BottomNav /> */}
           </div>
         </div>
         {children}

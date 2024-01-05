@@ -27,12 +27,19 @@ export default function App() {
         slidesPerView={1}
       >
         <SwiperSlide className="">
-          <div className="relative">
+          <div className="relative overflow-hidden ">
             <Image
               src={"/images/slide-1.jpg"}
-              className="rounded relative "
+              className="rounded relative hidden md:block"
               width={1000}
               height={700}
+              alt=""
+            />
+            <Image
+              src={"/images/slide-1.jpg"}
+              className="rounded relative block md:hidden"
+              width={300}
+              height={500}
               alt=""
             />
             <div className="absolute top-0 flex flex-col justify-center h-full ml-14 text-gray-900">
@@ -55,9 +62,16 @@ export default function App() {
           <div className="relative">
             <Image
               src={"/images/slide-2.jpg"}
-              className="rounded relative"
+              className="rounded relative hidden md:block"
               width={1000}
               height={700}
+              alt=""
+            />
+            <Image
+              src={"/images/slide-3.jpg"}
+              className="rounded relative block md:hidden"
+              width={300}
+              height={500}
               alt=""
             />
             <div className="absolute top-0 flex flex-col justify-center h-full ml-14 text-gray-900">
@@ -80,9 +94,16 @@ export default function App() {
           <div className="relative">
             <Image
               src={"/images/slide-3.jpg"}
-              className="rounded relative"
+              className="rounded relative hidden md:block"
               width={1000}
               height={700}
+              alt=""
+            />
+            <Image
+              src={"/images/slide-3.jpg"}
+              className="rounded relative block md:hidden"
+              width={300}
+              height={500}
               alt=""
             />
             <div className="absolute top-0 flex flex-col justify-center h-full ml-14 text-gray-900">

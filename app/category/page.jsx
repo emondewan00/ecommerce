@@ -3,6 +3,7 @@ import Availability from "@/components/molecules/filters/Availability";
 import Brand from "@/components/molecules/filters/Brand";
 import Color from "@/components/molecules/filters/Color";
 import RangeFilter from "@/components/molecules/filters/RangeFilter";
+import Size from "@/components/molecules/filters/Size";
 import TopBar from "@/components/molecules/filters/TopBar";
 
 const Category = () => {
@@ -15,10 +16,15 @@ const Category = () => {
           <Availability />
           <Brand />
           <Color />
+          <Size />
         </div>
         <div className="full">
           <TopBar />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <PDCard />
+            <PDCard />
+            <PDCard />
+            <PDCard />
             <PDCard />
             <PDCard />
             <PDCard />

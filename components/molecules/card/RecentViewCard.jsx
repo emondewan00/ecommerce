@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const RecentViewCard = () => {
+const RecentViewCard = ({image,pdId,name}) => {
   return (
     <div className="relative group">
       <Image

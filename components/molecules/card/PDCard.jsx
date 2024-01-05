@@ -1,8 +1,9 @@
 "use client";
+import ProductHover from "@/components/atoms/icons/ProductHover";
 import Image from "next/image";
-import { FaRegHeart, FaSearch, FaShoppingBag, FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import Rating from "react-rating";
-const PDCard = () => {
+const PDCard = ({ image, discount, name, price, rating, review }) => {
   return (
     <div className="text-center w-fit group">
       <div className="relative">
@@ -16,17 +17,7 @@ const PDCard = () => {
         <span className="absolute top-4 left-4 bg-orange-400 text-white text-[12px] px-2 rounded-[2px] py-[1px]">
           7% OFF
         </span>
-        <div className="absolute top-4 right-4 space-y-2 opacity-0 transition-opacity delay-100 duration-300 ease-linear group-hover:opacity-100">
-          <div className="bg-white text-gray-400 p-2 rounded-full">
-            <FaShoppingBag />
-          </div>
-          <div className="bg-white text-gray-400 p-2 rounded-full">
-            <FaRegHeart />
-          </div>
-          <div className="bg-white text-gray-400 p-2 rounded-full">
-            <FaSearch />
-          </div>
-        </div>
+        <ProductHover />
       </div>
       <div>
         <p className=" mt-2">Classic Hat</p>

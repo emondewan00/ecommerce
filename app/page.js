@@ -13,10 +13,10 @@ import TopSell from "@/components/organisms/topsell/TopSell";
 export default function Home() {
   return (
     <div className="max-w-5xl mx-auto px-4 md:px-0">
-      <div className="my-4 flex flex-col-reverse md:flex-row gap-4">
+      {/* <div className="my-4 flex flex-col-reverse md:flex-row gap-4">
         <SideBar />
         <Slider />
-      </div>
+      </div> */}
       <Features />
       <Sponsors />
       <div className="flex flex-col md:flex-row gap-4">
