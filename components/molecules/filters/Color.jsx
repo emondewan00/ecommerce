@@ -1,18 +1,42 @@
 import FilterHead from "@/components/atoms/filterHead/FilterHead";
 import FilterCheckBox from "../filterCheckBox/FilterCheckBox";
+import Accordion from "@/components/organisms/accordion/Accordion";
+
+const productColors = [
+  {
+    id: 1,
+    label: "Red",
+    name: "redFor",
+  },
+  {
+    id: 2,
+    label: "Green",
+    name: "greenFor",
+  },
+  {
+    id: 3,
+    label: "Blue",
+    name: "blueFor",
+  },
+  {
+    id: 4,
+    label: "Yellow",
+    name: "yellowFor",
+  },
+  {
+    id: 5,
+    label: "Black",
+    name: "blackFor",
+  },
+  {
+    id: 6,
+    label: "White",
+    name: "whiteFor",
+  },
+];
 
 const Color = () => {
-  return (
-    <div className="shadow-md rounded-[1px] my-2 bg-gray-50">
-      <FilterHead title={"Color"} />
-      <div className="mt-4 px-4 pb-3">
-        <FilterCheckBox label={"Black"} name={"black"} />
-        <FilterCheckBox label={"Blue"} name={"blue"} />
-        <FilterCheckBox label={"Brown"} name={"brown"} />
-        <FilterCheckBox label={"Green"} name={"green"} />
-      </div>
-    </div>
-  );
+  return <Accordion title={"Colors"} items={productColors} />;
 };
 
 export default Color;

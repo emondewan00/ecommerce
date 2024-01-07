@@ -16,14 +16,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={`${roboto.className} bg-gray-50`}>
         <div className="bg-blue-500">
           <div className="max-w-5xl mx-auto ">
             <TopNav />
             <MidNav />
-            {/* <BottomNav /> */}
           </div>
         </div>
+        <BottomNav />
         {children}
       </body>
     </html>

@@ -1,26 +1,31 @@
 "use client";
 import ProductHover from "@/components/atoms/icons/ProductHover";
 import Image from "next/image";
+import Link from "next/link";
 import { FaStar } from "react-icons/fa";
 import Rating from "react-rating";
 const PDCard = ({ image, discount, name, price, rating, review }) => {
   return (
-    <div className="text-center w-fit group">
+    <div className="text-center w-fit group bg-white hover:shadow-lg transition-all duration-200">
       <div className="relative">
-        <Image
-          src={"/images/3-1-1.jpg"}
-          className="w-[200px] h-[180px] object-cover relative"
-          width={200}
-          height={200}
-          alt=""
-        />
+        <Link href={"/product"}>
+          <Image
+            src={"/images/3-1-1.jpg"}
+            className="w-[200px] h-[180px] object-cover relative"
+            width={200}
+            height={200}
+            alt=""
+          />
+        </Link>
         <span className="absolute top-4 left-4 bg-orange-400 text-white text-[12px] px-2 rounded-[2px] py-[1px]">
           7% OFF
         </span>
         <ProductHover />
       </div>
-      <div>
-        <p className=" mt-2">Classic Hat</p>
+      <div className="p-1">
+        <Link href={"/product"} className=" mt-2 inline-block">
+          Classic Hat
+        </Link>
         <div className="text-sm my-1">
           <Rating
             readonly

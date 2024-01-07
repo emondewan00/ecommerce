@@ -9,7 +9,6 @@ import MenuMobile from "../sidebar/MenuMobile";
 
 const MidNav = () => {
   const [sideBar, setSideBar] = useState(false);
-  console.log(sideBar);
   return (
     <>
       <div className="py-6 flex items-center px-4 md:px-0">
@@ -28,6 +27,7 @@ const MidNav = () => {
       </div>
       {/* mobile side navbar */}
       <MenuMobile sideBar={sideBar} setSideBar={setSideBar} />
+      
     </>
   );
 };

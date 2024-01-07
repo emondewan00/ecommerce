@@ -1,5 +1,4 @@
 const FilterCheckBox = ({ name, label }) => {
-  console.log(name, label);
   return (
     <label
       htmlFor={name}

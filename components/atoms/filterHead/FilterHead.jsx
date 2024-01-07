@@ -1,15 +1,13 @@
 "use client";
-import { useState } from "react";
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleUp } from "react-icons/fa";
 
 const FilterHead = ({ title, accordionState, accordionFn }) => {
-  const [accordion, setAccordion] = useState(false);
   return (
     <div className="p-4 border-b flex items-center  justify-between">
       <p className="text-gray-700 ">{title}</p>
-      <FaAngleDown
+      <FaAngleUp
         className={`cursor-pointer  transition-all duration-300 delay-75 ease-linear ${
-          accordionState ? "rotate-180 " : "rotate-0"
+          accordionState ? "rotate-0": "rotate-180 " 
         }}`}
         onClick={() => accordionFn(!accordionState)}
       />

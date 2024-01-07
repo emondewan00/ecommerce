@@ -6,6 +6,7 @@ import {
   FaPinterest,
   FaRegHeart,
   FaShoppingBag,
+  FaShoppingCart,
   FaStar,
   FaTwitter,
   FaWhatsapp,
@@ -15,18 +16,52 @@ import Rating from "react-rating";
 
 const Product = () => {
   return (
-    <div className="  mt-5 flex gap-x-6">
-      <div className="relative">
-        <Image
-          src={"/images/1-1-600x675.jpg"}
-          className="min-w-[425px] h-[425px] object-cover relative"
-          width={600}
-          height={600}
-          alt=""
-        />
-        <span className="absolute top-4 left-4 bg-orange-400 text-white text-[12px] px-2 rounded-[2px] py-[1px]">
-          7% OFF
-        </span>
+    <div className="shadow-lg bg-white mt-5 flex flex-col md:flex-row gap-6 p-4">
+      <div className="flex flex-col-reverse md:flex-row gap-4">
+        <div className="md:order-[0]">
+          <div className=" md:space-y-4 order-1  flex items-center md:block gap-4">
+            <Image
+              src={"/images/1-1-600x675.jpg"}
+              className="min-w-[100px] h-[100px] object-cover relative"
+              width={100}
+              height={100}
+              alt=""
+            />
+            <Image
+              src={"/images/1-1-600x675.jpg"}
+              className="min-w-[100px] h-[100px] object-cover relative"
+              width={100}
+              height={100}
+              alt=""
+            />
+            <Image
+              src={"/images/1-1-600x675.jpg"}
+              className="min-w-[100px] h-[100px] object-cover relative"
+              width={100}
+              height={100}
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="relative">
+          <Image
+            src={"/images/1-1-600x675.jpg"}
+            className="min-w-[350px] h-[350px] object-cover relative hidden md:block"
+            width={400}
+            height={400}
+            alt=""
+          />
+          <Image
+            src={"/images/1-1-600x675.jpg"}
+            className="w-[350px] h-[300px] object-cover relative block md:hidden"
+            width={300}
+            height={300}
+            alt=""
+          />
+          <span className="absolute top-4 left-4 bg-orange-400 text-white text-[12px] px-2 rounded-[2px] py-[1px]">
+            7% OFF
+          </span>
+        </div>
       </div>
       <div className="w-full ">
         <h4 className="mt-2 text-xl">Coat Pool Comfort Jacket</h4>
@@ -38,64 +73,17 @@ const Product = () => {
             placeholderSymbol={<FaStar className="text-yellow-400 " />}
             fullSymbol={<FaStar />}
           />
-          <span className="ml-2 text-gray-400">(1 Reviews)</span>
+          <span className="ml-2 text-gray-400">156 Ratings | 1 Reviews</span>
         </div>
+        <p className="text-gray-500 my-2">Brand:hello</p>
+        <p className="text-gray-500 my-2">Category:hello</p>
         <h3 className="font-extrabold text-xl">$53.00 - $180.00</h3>
-        <ul className="list-image-[url(/images/done.png)] list-inside features">
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-        </ul>
-        <div className="flex gap-x-4 text-gray-600">
-          <p>Size:</p>
-          <div className="space-x-2">
-            <button className=" text-[12px] border rounded-[2px] py-[2px] px-2 text-gray-700">
-              Extra Large
-            </button>
-            <button className=" text-[12px] border rounded-[2px] py-[2px] px-2 text-gray-700">
-              Large
-            </button>
-            <button className=" text-[12px] border rounded-[2px] py-[2px] px-2 text-gray-700">
-              Medium
-            </button>
-            <button className=" text-[12px] border rounded-[2px] py-[2px] px-2 text-gray-700">
-              Small
-            </button>
-          </div>
-        </div>
-        <hr className="my-4" />
-        <div className="flex  gap-x-4">
-          <input
-            type="number"
-            name=""
-            className="outline-none border-gray-400 border py-2 px-2 rounded-[2px] w-32"
-            id=""
-            defaultValue={1}
-          />
-          <button className="uppercase text-sm text-gray-500 bg-gray-100 py-2 px-3 rounded flex gap-x-2 items-center grow justify-center">
-            <FaShoppingBag />
+
+        <div className="flex  gap-4">
+          <button className="uppercase w-fit text-sm text-white bg-yellow-400 py-3 my-2 px-6 rounded flex gap-2 items-center  justify-center">
+            <FaShoppingCart />
             add to cart
           </button>
-        </div>
-        <div className="flex gap-x-2 items-center mt-3">
-          <div className="border text-gray-500 p-2 rounded-full">
-            <FaFacebook />
-          </div>
-          <div className="border text-gray-500 p-2 rounded-full">
-            <FaTwitter />
-          </div>
-          <div className="border text-gray-500 p-2 rounded-full">
-            <FaPinterest />
-          </div>
-          <div className="border text-gray-500 p-2 rounded-full">
-            <FaWhatsapp />
-          </div>
-          <div className="border text-gray-500 p-2 rounded-full">
-            <FaLinkedinIn />
-          </div>
-          <span className="border mx-3 h-6"></span>
-          <FaRegHeart className="text-xl text-gray-500" />
-          <MdCompareArrows className="text-xl text-gray-500" />
         </div>
       </div>
     </div>

@@ -25,6 +25,14 @@ export default function App() {
         // speed={2000}
         // loop={true}
         slidesPerView={1}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 1,
+          },
+        }}
       >
         <SwiperSlide className="">
           <div className="relative overflow-hidden ">
