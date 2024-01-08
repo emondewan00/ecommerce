@@ -1,11 +1,12 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay,Navigation } from "swiper/modules";
 import Image from "next/image";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 import LinkButton from "@/components/atoms/Button/LinkButton";
 
 export default function App() {
@@ -15,7 +16,7 @@ export default function App() {
         pagination={{
           dynamicBullets: true,
         }}
-        modules={[Pagination, Autoplay]}
+        modules={[Pagination, Autoplay, Navigation]}
         className="mySwiper"
         autoHeight={true}
         autoplay={{

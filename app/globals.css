@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.menu-item li a {
+.menu-item > li >a {
   @apply p-4 inline-block;
 }
 .sidebar li a {
@@ -38,10 +38,10 @@
   .nav-link li a {
     @apply p-2 inline-block border-b w-full border-gray-800;
   }
-  .related-product{
+  .related-product {
     grid-template-columns: 0.75fr 0.25fr;
   }
-  .slider-image{
+  .slider-image {
     width: calc(100vw - 32px);
   }
 }
@@ -51,4 +51,3 @@
   backface-visibility: hidden;
   transform-style: preserve-3d;
 } */
-
