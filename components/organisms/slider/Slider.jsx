@@ -18,21 +18,13 @@ export default function App() {
         modules={[Pagination, Autoplay]}
         className="mySwiper"
         autoHeight={true}
-        // autoplay={{
-        //   delay: 3000,
-        //   waitForTransition: true,
-        // }}
-        // speed={2000}
-        // loop={true}
-        slidesPerView={1}
-        breakpoints={{
-          640: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 1,
-          },
+        autoplay={{
+          delay: 3000,
+          waitForTransition: true,
         }}
+        speed={2000}
+        loop={true}
+        slidesPerView={1}
       >
         <SwiperSlide className="">
           <div className="relative overflow-hidden ">
@@ -45,16 +37,18 @@ export default function App() {
             />
             <Image
               src={"/images/slide-1.jpg"}
-              className="rounded relative block md:hidden"
+              className="rounded relative block slider-image md:hidden"
               width={300}
               height={500}
               alt=""
             />
-            <div className="absolute top-0 flex flex-col justify-center h-full ml-14 text-gray-900">
-              <p className="text-white uppercase">
-                Over 200 products with discounts
+            <div className="absolute top-0 flex flex-col justify-center h-full ml-4 md:ml-14 text-gray-900">
+              <p className="text-[12px] text-white uppercase">
+                Find the boundaries .Push through
               </p>
-              <h1 className="text-5xl font-bold uppercase">Great Deals</h1>
+              <h1 className="text-2xl md:text-5xl font-bold uppercase">
+                Great Deals
+              </h1>
               <div className="flex gap-x-4 mt-2">
                 <h5 className="uppercase text-lg mt-2">
                   <sup>starting at $</sup>
@@ -77,7 +71,7 @@ export default function App() {
             />
             <Image
               src={"/images/slide-3.jpg"}
-              className="rounded relative block md:hidden"
+              className="rounded relative block slider-image md:hidden"
               width={300}
               height={500}
               alt=""
@@ -109,7 +103,7 @@ export default function App() {
             />
             <Image
               src={"/images/slide-3.jpg"}
-              className="rounded relative block md:hidden"
+              className="rounded relative block slider-image md:hidden"
               width={300}
               height={500}
               alt=""

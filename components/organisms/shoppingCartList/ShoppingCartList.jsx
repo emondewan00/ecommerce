@@ -13,7 +13,7 @@ const ShoppingCartList = () => {
           <th className="text-start">Total</th>
         </tr>
       </thead>
-      <tbody className=" md:*:!border-b">
+      <tbody className="cart md:*:!border-b">
         <CartRow />
         <CartRow />
         <CartRow />

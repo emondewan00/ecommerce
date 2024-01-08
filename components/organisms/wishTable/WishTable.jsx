@@ -12,7 +12,7 @@ const WishTable = () => {
           <th className="text-start w-1/4">Action</th>
         </tr>
       </thead>
-      <tbody className=" md:*:!border-b">
+      <tbody className="cart md:*:!border-b">
         <WishRow />
         <WishRow />
         <WishRow />

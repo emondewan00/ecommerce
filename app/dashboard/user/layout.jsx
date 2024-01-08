@@ -13,7 +13,7 @@ const UserLayout = ({ children }) => {
               <Link href={"/"}>Dashboard</Link>
             </li>
             <li>
-              <Link href={"/"}>Orders</Link>
+              <Link href={"/dashboard/user/orders"}>Orders</Link>
             </li>
             <li>
               <Link href={"/"}>Downloads</Link>
@@ -22,7 +22,7 @@ const UserLayout = ({ children }) => {
               <Link href={"/"}>Address</Link>
             </li>
             <li>
-              <Link href={"/"}>Account Details</Link>
+              <Link href={"/dashboard/user/details"}>Account Details</Link>
             </li>
             <li>
               <Link href={"/"}>Cart</Link>
@@ -35,7 +35,7 @@ const UserLayout = ({ children }) => {
             </li>
           </ul>
         </div>
-        <div className="w-full bg-green-600"> {children}</div>
+        <div className="w-full mt-4 md:mt-0"> {children}</div>
       </div>
     </div>
   );

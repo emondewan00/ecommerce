@@ -3,7 +3,6 @@ import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
 
 const MenuMobile = ({ sideBar, setSideBar }) => {
-  console.log(sideBar)
   return (
     <div
       className={`absolute z-20 w-64 h-full top-0 bg-gray-900 text-white p-4 transition-all duration-300 delay-75 ease-linear  md:hidden ${
