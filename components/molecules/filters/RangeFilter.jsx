@@ -2,7 +2,7 @@
 import { useState } from "react";
 const RangeFilter = () => {
   const [range, setRange] = useState(0);
-  console.log(range);
+  
   return (
     <div className="shadow-md rounded-[1px] bg-gray-50">
       <p className="text-gray-700 p-4 border-b">Price Range</p>
