@@ -1,13 +1,22 @@
 // FaTh
 // FaThList icon class
 
-const TopBar = () => {
+import { FaFilter } from "react-icons/fa";
+
+const TopBar = ({ setOpenFilter }) => {
   return (
     <div className="shadow mb-3 rounded-[1px] flex justify-between px-4 py-2">
-      <p>Product</p>
+      <p className="hidden md:block">Product</p>
+      <div
+        onClick={() => setOpenFilter(true)}
+        className="bg-gray-100 gap-2 rounded-[2px] text-gray-700 flex items-center px-2 md:hidden"
+      >
+        <FaFilter />
+        <span>Filter</span>
+      </div>
       <div className="flex gap-2">
         <div>
-          <label htmlFor="show" className="text-gray-700">
+          <label htmlFor="show" className="text-gray-700 hidden md:inline">
             Show:
           </label>
           <select
@@ -20,7 +29,7 @@ const TopBar = () => {
           </select>
         </div>
         <div>
-          <label htmlFor="sortBy" className="text-gray-700">
+          <label htmlFor="sortBy" className="text-gray-700 hidden md:inline">
             Sort By:
           </label>
           <select
