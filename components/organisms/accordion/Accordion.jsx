@@ -13,7 +13,7 @@ const Accordion = ({ title, items = [] }) => {
         accordionState={accordionOpen}
       />
       <div
-        className={`accordion-box accordion-transition grid ${
+        className={`transition-all duration-300 ease-linear delay-75 grid ${
           accordionOpen
             ? "grid-rows-[1fr] mt-4 px-4 pb-3  overflow-y-hidden"
             : "grid-rows-[0fr] overflow-hidden"
