@@ -1,5 +1,4 @@
 import Breadcrumb from "@/components/molecules/Breadcrumb/Breadcrumb";
-import ShoppingCartList from "@/components/organisms/shoppingCartList/ShoppingCartList";
 import WishTable from "@/components/organisms/wishTable/WishTable";
 
 const Wishlist = () => {

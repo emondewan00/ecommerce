@@ -11,7 +11,7 @@ const ProductPage = () => {
       <ProductDetails />
       <div className="my-10 shadow-lg p-4 bg-slate-50">
         <h1>Related Products </h1>
-        <div className="related-product grid gap-4 mt-4">
+        <div className="related-product flex flex-col md:flex-row gap-4 mt-4 ">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
             <PDCard />
             <PDCard />

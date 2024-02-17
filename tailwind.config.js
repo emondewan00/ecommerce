@@ -13,8 +13,11 @@ module.exports = {
     },
     extend: {
       gridTemplateColumns: {
-        pdDetails: "0.6fr 0.4fr",
+        pdDetails: "45% 45%",
       },
+      gridTemplateRows: {
+        thumb: "70% 30%",
+      }
     },
   },
   plugins: [],

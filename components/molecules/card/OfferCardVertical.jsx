@@ -2,7 +2,7 @@ import Image from "next/image";
 import VerticalText from "../offer/VerticalText";
 import TextButton from "@/components/atoms/Button/TextButton";
 
-const OfferCardVertical = () => {
+const OfferCardVertical = ({ offerData }) => {
   const content = {
     subTitle: "New Arrival",
     percentage: "20 % OFF",

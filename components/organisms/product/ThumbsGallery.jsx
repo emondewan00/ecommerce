@@ -11,13 +11,14 @@ import "swiper/css/thumbs";
 
 // import required modules
 import { FreeMode, Navigation, Thumbs, Zoom } from "swiper/modules";
+import Image from "next/image";
 
 export default function ThumbsGallery() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
     <>
-      <div className="w-full space-y-2 ">
+      <div className="w-full space-y-2 md:max-h-[400px] grid grid-cols-1  grid-flow-row grid-rows-thumb ">
         <Swiper
           style={{
             "--swiper-navigation-color": "#fff",
@@ -28,31 +29,47 @@ export default function ThumbsGallery() {
           navigation={true}
           thumbs={{ swiper: thumbsSwiper }}
           modules={[FreeMode, Navigation, Thumbs, Zoom]}
-          className="mySwiper2"
+          className="mySwiper2 "
           autoHeight={true}
         >
           <SwiperSlide>
-            <div className="swiper-zoom-container">
-              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            <div className="swiper-zoom-container cursor-zoom-in">
+              <img
+                alt="product image"
+                className="object-cover w-full object-center "
+                src="https://swiperjs.com/demos/images/nature-1.jpg"
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            <img
+              className="h-auto object-contain"
+              src="https://swiperjs.com/demos/images/nature-2.jpg"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            <img
+              className="h-auto object-contain"
+              src="https://swiperjs.com/demos/images/nature-3.jpg"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            <img
+              className="h-auto object-contain"
+              src="https://swiperjs.com/demos/images/nature-4.jpg"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            <img
+              className="h-auto object-contain"
+              src="https://swiperjs.com/demos/images/nature-5.jpg"
+            />
           </SwiperSlide>
         </Swiper>
         <Swiper
           onSwiper={setThumbsSwiper}
           spaceBetween={10}
-          slidesPerView={4}
+          slidesPerView={3}
           freeMode={true}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}

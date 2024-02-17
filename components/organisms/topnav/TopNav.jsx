@@ -12,7 +12,7 @@ const TopNav = () => {
       <div className="flex justify-between md:justify-normal gap-x-6 ">
         <ul className=" text-sm items-center gap-x-4 md:flex hidden">
           <li>
-            <Link href={"/#"}>My Account</Link>
+            <Link href={"/dashboard/user"}>My Account</Link>
           </li>
           <li>
             <Link href={"/"}>Contact Us</Link>
@@ -21,13 +21,13 @@ const TopNav = () => {
             <Link href={"/"}>Blog</Link>
           </li>
           <li>
-            <Link href={"/"}>My Wishlist</Link>
+            <Link href={"/wishlist"}>My Wishlist</Link>
           </li>
           <li>
-            <Link href={"/"}>Cart</Link>
+            <Link href={"/cart"}>Cart</Link>
           </li>
           <li>
-            <Link href={"/"}>Log In</Link>
+            <Link href={"/login"}>Log In</Link>
           </li>
         </ul>
         <span className="border-[1px] hidden md:block"></span>

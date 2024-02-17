@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const RecentViewCard = ({ image, pdId, name }) => {
+const RecentViewCard = ({ image = "/images/2-42.jpg", name = "Clothing" }) => {
   return (
     <div className="relative group">
       <Image
@@ -16,7 +16,7 @@ const RecentViewCard = ({ image, pdId, name }) => {
           href={"/"}
           className=" group-hover:block hidden  after:transition-all after:ease-linear after:duration-200 after:delay-100 after:[] after:w-0 after:h-1 after:bg-white after:rounded after:absolute after:bottom-[60px] after:left-11 hover:after:w-[68px] "
         >
-          Clothing
+          {name}
         </Link>
       </div>
     </div>

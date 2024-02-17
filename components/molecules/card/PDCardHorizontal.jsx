@@ -3,12 +3,17 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import Rating from "react-rating";
 
-const PDCardHorizontal = () => {
+const PDCardHorizontal = ({
+  image = "/images/3-1-1.jpg",
+  name = "Classic Hat",
+  rating = 4.5,
+  price = "$53.00",
+}) => {
   return (
     <div className=" w-fit flex gap-4">
       <div className="relative">
         <Image
-          src={"/images/3-1-1.jpg"}
+          src={image}
           className="w-[100px] h-[100px] object-cover relative"
           width={200}
           height={200}
@@ -19,18 +24,18 @@ const PDCardHorizontal = () => {
       </span> */}
       </div>
       <div className="self-center">
-        <p className=" mt-2">Classic Hat</p>
+        <p className=" mt-2">{name}</p>
         <div className="text-sm my-1">
           <Rating
             readonly
-            placeholderRating={4.5}
+            placeholderRating={rating}
             emptySymbol={<FaStar className="text-gray-400 " />}
             placeholderSymbol={<FaStar className="text-yellow-400 " />}
             fullSymbol={<FaStar />}
           />
           {/* <span className="ml-2 text-gray-400">(1 Reviews)</span> */}
         </div>
-        <h3 className="font-bold ">$53.00</h3>
+        <h3 className="font-bold ">{price}</h3>
       </div>
     </div>
   );

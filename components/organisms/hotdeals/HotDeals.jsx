@@ -13,32 +13,39 @@ import {
 import { MdCompareArrows } from "react-icons/md";
 import Rating from "react-rating";
 
-const HotDeals = () => {
+const HotDeals = ({
+  image = "/images/1-1-600x675.jpg",
+  name = "Coat Pool Comfort Jacket",
+  price = "$53.00",
+  rating = 4.5,
+  review = "1 Reviews",
+  discount = "7%",
+}) => {
   return (
     <div className="rounded border p-4 md:min-w-[75%]">
       <h3 className="text-xl py-2 border-b">Deals Hot of The Day</h3>
       <div className="  mt-5 flex flex-col md:flex-row gap-6 ">
         <div className="relative">
           <Image
-            src={"/images/1-1-600x675.jpg"}
+            src={image}
             className="hidden md:block object-cover relative"
             width={600}
             height={600}
             alt=""
           />
           <Image
-            src={"/images/1-1-600x675.jpg"}
+            src={image}
             className="block h-64 w-72 md:hidden object-cover relative mx-auto"
             width={120}
             height={100}
             alt=""
           />
           <span className="absolute top-4 left-4 bg-orange-400 text-white text-[12px] px-2 rounded-[2px] py-[1px]">
-            7% OFF
+            {discount} OFF
           </span>
         </div>
         <div className="w-full self-center">
-          <h4 className="mt-2 text-xl">Coat Pool Comfort Jacket</h4>
+          <h4 className="mt-2 text-xl">{name}</h4>
           <hr className="my-3" />
           <h3 className="font-extrabold text-xl">$53.00 - $180.00</h3>
           <p className=" text-gray-600 ">
@@ -48,12 +55,12 @@ const HotDeals = () => {
           <div className="text-sm my-2">
             <Rating
               readonly
-              placeholderRating={4.5}
+              placeholderRating={rating}
               emptySymbol={<FaStar className="text-gray-400 " />}
               placeholderSymbol={<FaStar className="text-yellow-400 " />}
               fullSymbol={<FaStar />}
             />
-            <span className="ml-2 text-gray-400">(1 Reviews)</span>
+            <span className="ml-2 text-gray-400">({review})</span>
           </div>
           <div className="flex justify-between text-gray-600">
             <p>Size:</p>

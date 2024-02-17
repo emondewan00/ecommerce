@@ -9,22 +9,22 @@ const SideBar = () => {
       <div className="px-4 mb-4">
         <ul className="sidebar">
           <li>
-            <Link href={"/"}>Fashion</Link>
+            <Link href={"/category"}>Fashion</Link>
           </li>
           <li>
-            <Link href={"/"}>Electronics</Link>
+            <Link href={"/category"}>Electronics</Link>
           </li>
           <li>
-            <Link href={"/"}>Gifts</Link>
+            <Link href={"/category"}>Gifts</Link>
           </li>
           <li>
-            <Link href={"/"}>Home & Garden</Link>
+            <Link href={"/category"}>Home & Garden</Link>
           </li>
           <li>
-            <Link href={"/"}>Music</Link>
+            <Link href={"/category"}>Music</Link>
           </li>
           <li>
-            <Link href={"/"}>Sports</Link>
+            <Link href={"/category"}>Sports</Link>
           </li>
         </ul>
         <Link

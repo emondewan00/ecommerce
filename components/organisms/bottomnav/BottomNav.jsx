@@ -34,28 +34,25 @@ const BottomNav = () => {
             </li>
             <li className="group relative">
               <Link href={"/"}>CATEGORY</Link>
-              <div className="group-hover:block absolute text-black p-4 top-12 z-20 bg-white shadow hidden w-40 ">
+              <div className="group-hover:block absolute text-black p-4 top-12 z-50 bg-white shadow hidden w-40 ">
                 <ul className="hover:*:text-blue-500 *:transition-all *:duration-300">
                   <li>
-                    <Link href={"/"}>Clothing</Link>
+                    <Link href={"/category"}>Clothing</Link>
                   </li>
                   <li>
-                    <Link href={"/"}>Shoes</Link>
+                    <Link href={"/category"}>Shoes</Link>
                   </li>
                   <li>
-                    <Link href={"/"}>Fashion</Link>
+                    <Link href={"/category"}>Fashion</Link>
                   </li>
                   <li>
-                    <Link href={"/"}>Electronic</Link>
+                    <Link href={"/category"}>Electronic</Link>
                   </li>
                 </ul>
               </div>
             </li>
             <li>
-              <Link href={"/"}>PRODUCTS</Link>
-            </li>
-            <li>
-              <Link href={"/"}>PAGES</Link>
+              <Link href={"/category"}>PRODUCTS</Link>
             </li>
             <li>
               <Link href={"/"}>BLOG</Link>
