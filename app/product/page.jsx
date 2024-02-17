@@ -1,5 +1,6 @@
 import PDCard from "@/components/molecules/card/PDCard";
 import Product from "@/components/organisms/product/Product";
+import ThumbsGallery from "@/components/organisms/product/ThumbsGallery";
 import ProductDetails from "@/components/organisms/productDetails/ProductDetails";
 import TopSell from "@/components/organisms/topsell/TopSell";
 
