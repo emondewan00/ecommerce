@@ -9,6 +9,7 @@ import Slider from "@/components/organisms/slider/Slider";
 import Sponsors from "@/components/organisms/offer/OfferTwoCard";
 import TopCategories from "@/components/organisms/topcategories/TopCategories";
 import TopSell from "@/components/organisms/topsell/TopSell";
+import SliderTwo from "@/components/organisms/slider/SliderTwo";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <div className="my-4 flex flex-col-reverse md:flex-row gap-4">
         <SideBar />
         <Slider />
+        {/* <SliderTwo /> */}
       </div>
       <Features />
       <Sponsors />

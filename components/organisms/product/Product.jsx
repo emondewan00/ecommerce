@@ -1,17 +1,9 @@
 "use client";
 import Image from "next/image";
 import {
-  FaFacebook,
-  FaLinkedinIn,
-  FaPinterest,
-  FaRegHeart,
-  FaShoppingBag,
   FaShoppingCart,
   FaStar,
-  FaTwitter,
-  FaWhatsapp,
 } from "react-icons/fa";
-import { MdCompareArrows } from "react-icons/md";
 import Rating from "react-rating";
 
 const Product = () => {
@@ -63,7 +55,7 @@ const Product = () => {
           </span>
         </div>
       </div>
-      <div className="w-full ">
+      <div className="w-full "> 
         <h4 className="mt-2 text-xl">Coat Pool Comfort Jacket</h4>
         <div className="text-sm my-2">
           <Rating

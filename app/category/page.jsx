@@ -16,7 +16,7 @@ const Category = () => {
             poenFilter ? className : "-left-96  md:block md:basis-72 "
           }`}
         >
-          <div className="absolute top-2 right-3 bg-rose-500 rounded ">
+          <div className="absolute md:hidden top-2 right-3 bg-rose-500 rounded ">
             <AiOutlineClose
               onClick={() => setOpenFilter(false)}
               className="text-3xl"

@@ -1,7 +1,8 @@
+// import 
 import Breadcrumb from "@/components/molecules/Breadcrumb/Breadcrumb";
 import Link from "next/link";
-
 const UserLayout = ({ children }) => {
+
   return (
     <div>
       <Breadcrumb />

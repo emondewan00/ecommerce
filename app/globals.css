@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.menu-item > li >a {
+.menu-item > li > a {
   @apply p-4 inline-block;
 }
 .sidebar li a {
@@ -41,13 +41,7 @@
   .related-product {
     grid-template-columns: 0.75fr 0.25fr;
   }
-  .slider-image {
-    width: calc(100vw - 32px);
+  .slide-image {
+    width: calc(100vw - 32px) !important;
   }
 }
-
-/* .threeD {
-  perspective: 100px;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-} */

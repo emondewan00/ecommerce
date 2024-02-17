@@ -1,3 +1,4 @@
+// "use client";
 import { FaBoxOpen } from "react-icons/fa";
 
 const UserPage = () => {

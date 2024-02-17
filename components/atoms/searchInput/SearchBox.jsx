@@ -6,7 +6,6 @@ const SearchBox = ({ boxStyle }) => {
       <input
         type="text"
         name="search"
-        id="search"
         placeholder="Search..."
         className="w-auto md:w-80 py-2 pl-4 pr-12 md:pr-[50px] rounded-full text-sm relative"
       />
