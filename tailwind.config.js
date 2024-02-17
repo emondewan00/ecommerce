@@ -5,10 +5,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
     backgroundImage: {
       clothing: "url('/images/2.jpg')",
       offer: "url('/images/4.jpg')",
+    },
+    extend: {
+      gridTemplateColumns: {
+        pdDetails: "0.6fr 0.4fr",
+      },
     },
   },
   plugins: [],
