@@ -1,7 +1,11 @@
+"use client";
 import Breadcrumb from "@/components/molecules/Breadcrumb/Breadcrumb";
 import WishTable from "@/components/organisms/wishTable/WishTable";
+import { useSession } from "next-auth/react";
 
 const Wishlist = () => {
+  const session = useSession();
+  console.log(session);
   return (
     <div>
       <Breadcrumb />

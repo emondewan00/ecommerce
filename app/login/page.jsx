@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { signIn } from "next-auth/react";
 import { useState } from "react";
 const Login = () => {
   const [err, setErr] = useState(null);
@@ -8,6 +9,7 @@ const Login = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
+    signIn("credentials", { email, password, redirect: true,callbackUrl:"http://localhost:3000" });
   };
   return (
     <div className="mt-14 mb-20 bg-gray-100  mx-auto max-w-5xl">

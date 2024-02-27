@@ -1,7 +1,9 @@
-// "use client";
+import { auth } from "@/app/auth";
 import { FaBoxOpen } from "react-icons/fa";
 
-const UserPage = () => {
+const UserPage = async () => {
+  const hello = await auth();
+  console.log(hello,"user dashboard page");
   return (
     <div>
       <p className="text-[16px] text-slate-800">Hello Emon</p>
